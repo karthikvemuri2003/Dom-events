@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div onclick="k()"><img id="d1" src="" alt=""></div>
+        <script>
+            var ar=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU1oYnR4rjqjoBqK8igpZPgUgFk72bTbqdgg&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjCcW7lbYJL_0FrOmC8OEJHCIRYtI7sh9hw&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoYUpH7PcKiGj2yLvoYds1Zz-yTEFuQ9e8Lg&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5a3XcPxiufuelU0OS9ObhLTedAp9i4Pfew&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST85OO6KxHssxcYEfAQs3yc4GdbNeVwhKMGw&s"]
+            var i=0;
+          function k(){
+                    var x=document.getElementById("d1");
+                    x.src=ar[i];
+                    i++;
+                    if(i==5){
+                        i=0;
+                    }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="d3" onclick="k()"></button>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <button id="d4" onclick="kk()"></button>
+        <script>
+            var c=0;
+            function k(){
+                var x=document.getElementById("d1");
+                x.innerHTML=c;
+                var y=document.getElementById("d3");
+                y.style.color="red";
+                y.innerHTML="like"
+                c++;
+            }
+            var c1=0;
+            function kk(){
+                var x=document.getElementById("d2");
+                x.innerHTML=c1;
+                c1++;
+                var y=document.getElementById("d4");
+                y.style.color="red";
+                y.innerHTML="dislike";
+            }
+        </script>
+    </body>
+</html>

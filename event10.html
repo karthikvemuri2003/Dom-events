@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+       </style>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <button id="d2" onclick="k()">toggle</button>
+        <script>
+            function k(){
+                var x=document.getElementById("d1");
+                var y=document.getElementById("d2");
+                if(x.style.backgroundColor=="yellow"){
+                    x.style.backgroundColor="";
+                    y.style.backgroundColor="";
+                }
+                else{
+                    y.style.backgroundColor="red";
+                    x.style.backgroundColor="yellow";
+                }
+            }
+        </script>
+    </body>
+</html>

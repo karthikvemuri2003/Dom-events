@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div><img id="d1" src="" alt=""></div>
+        <button style="background: yellow;" onclick="k()">prev</button>
+        <button style="background: yellow;" onclick="kk()">next</button>
+        <script>
+            var ar=["https://img.freepik.com/premium-photo/universe-stars-space-space-stars-space-hd-wallpaper_664601-8026.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhnGQynJWoQjaY6uudPF_KI9Y7KZxJSsgYEw&s"];
+            var i=0;
+            function kk(){
+                var x=document.getElementById("d1");
+                x.src=ar[i];
+                i++;
+                if(i==2){
+                    i=0;
+                }
+            }
+            function k(){
+                var x=document.getElementById("d1");
+                x.src=ar[i];
+                i--;
+                if(i==0){
+                    i=2;
+                }
+            }
+        </script>
+    </body>
+</html>

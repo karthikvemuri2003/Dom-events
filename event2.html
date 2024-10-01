@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="d1" style="border: 2px solid; height: 200px;width: 200px;"></div>
+        <button onclick="a()">red</button>
+        <button onclick="c()">green</button>
+        <button onclick="x()">yellow</button>
+        <button onclick="y()">reset</button>
+        <script>
+            function a(){
+                var x=document.getElementById("d1").style.backgroundColor="red";
+            }
+            function c(){
+                var x=document.getElementById("d1").style.backgroundColor="green";
+            }
+            function x(){
+                var x=document.getElementById("d1").style.backgroundColor="yellow";
+            }
+            function y(){
+                var x=document.getElementById("d1").style.backgroundColor="";
+            }
+        </script>
+    </body>
+</html>

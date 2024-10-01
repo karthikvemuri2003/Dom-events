@@ -1,0 +1,49 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <h1>add contact cards</h1>
+            <center>
+                <h5>Name :<input type="text" id="d2" name="Name"></h5>
+                <h5>Number : <input type="text" id="d3" name="Number"></h5>
+                <h5>Email :<input type="email" id="d4" name="Email"></h5>
+                <h5>Image URL : <input type="text" id="d5" name="image"></h5>
+                <button onclick="k()">add contact</button>
+            </center>
+            <div id="d1" style="display: flex;"></div>
+        </center>
+        <script>
+            function k(){
+                var x=document.createElement("div");
+                x.style.height="200px";
+                x.style.width="200px";
+                x.style.border="2px solid";
+                x.style.backgroundColor="violet"
+                x.style.alignContent="center";
+                document.getElementById("d1").appendChild(x);
+                var y=document.createElement("img");
+                var a=document.getElementById("d5").value;
+                y.setAttribute("src",a);
+                x.appendChild(y);
+                y.style.width="50px";
+                y.style.height="50px";
+                y.style.borderRadius="30px";
+                var c=document.createElement("h5")
+                var d=document.getElementById("d2").value;
+                c.innerText="name :"+d;
+                x.appendChild(c);
+                var e=document.createElement("h5")
+                var h=document.getElementById("d3").value;
+                e.innerText="number :"+h;
+                x.appendChild(e);
+                var q=document.createElement("h5")
+                var u=document.getElementById("d4").value;
+                q.innerText="email :"+u;
+                q.style.alignContent=u;
+                x.appendChild(q);
+            }
+        </script>
+    </body>
+</html>

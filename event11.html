@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            #d3{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d3">
+            <img id="d2" src="" alt="">
+        </div>
+        <button id="d1" onclick="k()"></button>
+        <script>
+                function k(){
+                    var x=document.getElementById("d1");
+                    var y=document.getElementById("d2");
+                    if(x.innerHTML=="on"){
+                        x.innerHTML="off";
+                        y.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPz4I1nuuc1T4HWiTnuyH6Nn81oSMdB3ZViQ&s"
+                    }
+                    else{
+                        x.innerHTML="on";
+                        y.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCVNmjVykHEC_mJY0unqjsCrK_g-1LctJRRg&s"
+                    }
+                }
+        </script>
+    </body>
+</html>

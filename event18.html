@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <button onclick="k()">red</button>
+        <button onclick="kk()">green</button>
+        <button onclick="kkk()">yellow</button>
+        <button onclick="kkkk()">reset</button>
+        <script>
+            function k(){
+                var x=document.getElementById("d1");
+                x.style.backgroundColor="red";
+            }
+            function kk(){
+                var x=document.getElementById("d1");
+                x.style.backgroundColor="green";
+            }
+            function kkk(){
+                var x=document.getElementById("d1");
+                x.style.backgroundColor="yellow";
+            }
+            function kkkk(){
+                var x=document.getElementById("d1");
+                x.style.backgroundColor="";
+            }
+        </script>
+    </body>
+</html>

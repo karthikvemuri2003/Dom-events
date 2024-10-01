@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 300px;
+                padding: 20px;
+                border: 2px solid
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick="k()"></div>
+        <script>
+            function k(x){
+                var x=document.getElementById("d1");
+             // var y= x.innerHTML="on";
+             if(x.innerHTML=="on"){
+                    x.style.backgroundColor="green";
+                    x.innerHTML="off"
+                }
+                else{
+                    x.style.backgroundColor="yellow";
+                    x.innerHTML="on";
+                }
+            }
+        </script>
+    </body>
+</html>

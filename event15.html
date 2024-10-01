@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 style="color: red;">add students</h1>
+        <div><input id="d2" type="text"></div>
+        <button onclick="k()">add students</button>
+        <div id="d1"></div>
+        <script>
+            function k(){
+                var y=document.getElementById("d2").value;
+                var a=document.createElement("li");
+                var x=document.getElementById("d1");
+                a.innerHTML=y;
+                x.appendChild(a);
+            }
+        </script>
+    </body>
+</html>

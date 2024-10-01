@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <button onclick="k()">true/false</button>
+        <script>
+            function k(){
+                var x=document.getElementById("d1");
+                if(x.innerHTML=="true"){
+                    x.innerHTML="false";
+                    x.style.backgroundColor="yellow";
+                }
+                else{
+                    x.innerHTML="true";
+                    x.style.backgroundColor="red";
+                }
+
+            }
+        </script>
+    </body>
+</html>

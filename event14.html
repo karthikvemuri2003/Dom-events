@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                height: 200px;
+                width: 200px;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: red;">show images using url</h1>
+        <h3 style="color: red;">enter image url:</h3>
+        <div> <input id="d2" type="text"></div>
+        <button style="background-color: yellow;" onclick="k()"> add images</button>
+        <div id="d1"></div>
+        </center>
+        <script>
+            function k(){
+                var x=document.getElementById("d1");
+                var a=document.getElementById("d2").value;
+                y=document.createElement("img");
+                y.src=a;
+               // y.setAttribute("src",a);
+                x.appendChild(y);
+            }
+        </script>
+    </body>
+</html> 
